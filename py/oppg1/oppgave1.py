@@ -1,4 +1,4 @@
-def finn_partall(liste) -> int:
+def sum_partall(liste) -> int:
     # - Debugging -
     # print("[D] Using:",liste)
     # - - - - - - -
@@ -85,4 +85,4 @@ def lag_nummerliste() -> list:
     return liste
 
 # Runs the program and prints the length of all the inputed even numbers.
-print("[+] The sum is:", finn_partall(lag_nummerliste()))
+print("[+] The sum is:", sum_partall(lag_nummerliste()))

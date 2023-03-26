@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-03-26T18:10:17.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="JI9RUnBSnj3G3m_0Ywyt" version="21.1.1" type="device">
+  <diagram name="Page-1" id="XgEgNW5GyoO_MLdTMOwN">
+    <mxGraphModel dx="819" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E0j09iI0d9yJPHcDrjrr-1" target="E0j09iI0d9yJPHcDrjrr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-1" value="finn_partall(liste)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-2" value="produkt =&amp;nbsp; []" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-4" value="temp1_runde = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-5" value="temp1_runde = temp1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="750" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-6" value="temp1 = liste lengde" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-8" value="temp1_runde ++" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-10" value="Sann" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="420" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-11" value="Usann" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="105" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-12" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0j09iI0d9yJPHcDrjrr-13" value="Er nummer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

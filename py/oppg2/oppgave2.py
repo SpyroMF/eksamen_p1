@@ -11,5 +11,5 @@ def get_word_count(string: str) -> int:
 # the number of words in the inputed string.
 print(
     "Antall ord i settningen:",
-    get_word_count(input("Skriv en settning:\n") + 1) # La til 1 fordi python starter tallrekker med 0...
+    get_word_count(input("Skriv en settning:\n") + 1) # Adding 1 to the wordcount since python starts its counting form 0...
 )

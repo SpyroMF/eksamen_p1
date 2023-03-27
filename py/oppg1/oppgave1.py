@@ -32,7 +32,7 @@ def lag_nummerliste() -> list:
     while u_in.lower() != "q":
 
         # At the start of ever round, get the user input
-        u_in = input("[i] Type a number (q to return): ")
+        u_in = input("[i] Skriv et nummer (q for å avslutte): ")
 
         if u_in.lower() == "q":
             return liste
@@ -75,7 +75,7 @@ def lag_nummerliste() -> list:
             liste.append(int(u_in))
         # If the user input doesn't contain any numbers.
         else:
-            print("[E] Make sure to only type numbers.")
+            print("[E] Husk å bare skriv nummer.")
     
     # - Debugging -
     # print("[D] Returning:", liste)
@@ -85,4 +85,4 @@ def lag_nummerliste() -> list:
     return liste
 
 # Runs the program and prints the length of all the inputed even numbers.
-print("[+] The sum is:", sum_partall(lag_nummerliste()))
+print("[+] Summen er:", sum_partall(lag_nummerliste()))

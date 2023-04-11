@@ -8,6 +8,8 @@ def write_to_file(string: str):
     file.write(string+"\n") # Writes the choosen string to the file
     file.close # Closes the file
     
+def word_count(text: str):
+    strings = text.split(" ")
     
 
 # Run until stopped.
@@ -21,3 +23,4 @@ while True:
 
     # Use the write to file functon to save the users supercool words.
     write_to_file(i)
+

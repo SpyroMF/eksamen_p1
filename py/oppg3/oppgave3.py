@@ -22,7 +22,7 @@ def make_word_list() -> list:
 # This function will find the longest word and return it
 def find_longest_word(strings: list) -> int:
 
-    # This counter keeps track of the longest wordd
+    # This counter keeps track of the longest word
     counter = 0
 
     # Runs of every word in the refered list
@@ -35,8 +35,22 @@ def find_longest_word(strings: list) -> int:
     # Return the length of the longest word
     return counter
 
+def find_shortest_word(strings: list) -> int:
+    # This counter keeps track of the shortest word
+    counter = find_longest_word(strings)
+
+    # Runs of every word in the refered list
+    for word in strings:
+
+        # If the word is shorter than counter, then set counter to be
+        # equal to the word length
+        if len(word) < counter:
+            counter = len(word)
+    # Return the length of the shortest word
+    return counter
+
 # Runs the program and prints the longest word
 print(
-    "Lengste ordet var:",
-    find_longest_word(make_word_list())
+    "[i] Lengded på det minste ordet var:",
+    find_shortest_word(make_word_list())
 )

@@ -5,42 +5,38 @@ class Person():
         self.name = name
         self.age = age
         self.address = address
+    
+    # Cryptography stuff (thanks https://stackoverflow.com/questions/2490334/simple-way-to-encode-a-string-according-to-a-password)
     def generate_key(self):
         return Fernet.generate_key()
+    def encrypt(self, message: bytes, key: bytes) -> bytes:
+        return Fernet(key).encrypt(message)
+    def decrypt(self, token: bytes, key: bytes) -> bytes:
+        return Fernet(key).decrypt(token)
+
     def save(self):
-        file1 = open("account.save", "w")
-        file2 = open("account.key", "wb")
-        
-        # Saves key
+        save_file = open("account.save", "wb")
+        key_file = open("account.key", "wb")
+
         key = self.generate_key()
-        print("Generated key:", key)
-        file2.write(key)
-        file2.close
+        key_file.write(key)
+        key_file.close()
         
-        # Saves encrypted data
-        file1.write(str(Fernet(key).encrypt(
-            bytes(str(
-            self.name+"\n"+
-            self.age+"\n"+
-            self.address
-            ), encoding='utf8')
-        )))
+        save_file.write(
+            self.encrypt(bytes("{0}\n{1}\n{2}".format(self.name, self.age, self.address), encoding="utf8"), key)
+        )
     def load(self):
-        file1 = open("account.save", "r")
-        file2 = open("account.key", "rb")
+        save_file = open("account.save", "rb")
+        key_file = open("account.key", "rb")
         
-        # Reads the key
-        key = file2.read()
+        key = key_file.read()
+        key = key_file.close()
         
-        
-        # Decrypts the raw text
-        token = file1.read()
-        raw = Fernet(key).decrypt(token)
-        
-        raw.split("\n")
-        print("Loaded and Decrypted text:", raw)
+        raw = self.decrypt(save_file.read(), key)
+    
 # Person 1 skal lagre
 person1 = Person("Kul kar", "18", "2 Kult,Sted 2001")
 person1.save()
+
 
 person2 = Person("e", "e", "e").load()

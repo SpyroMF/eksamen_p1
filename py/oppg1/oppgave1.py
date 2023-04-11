@@ -13,8 +13,7 @@ def sum_partall(liste) -> int:
         # print("[D]   - value:",i%2)
         #
         # - - - - - - -
-        if nummer % 2 == 0: # If "nummer" can be divided by two and still be an integer
-            
+        if nummer % 2 == 1: # If "nummer" can be divided by two and still be an integer
             # - Debugging -
             # print("Appending: ",i)
             # - - - - - - -

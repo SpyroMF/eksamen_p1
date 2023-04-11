@@ -8,16 +8,22 @@ def write_to_file(string: str):
     file.write(string+"\n") # Writes the choosen string to the file
     file.close # Closes the file
     
-def word_count(text: str):
+def word_count(text: str) -> dict:
     ls = text.split("\n")
     
     tmp_ordliste = {}
+    
+    # For words in the word list (ls)
     for i in ls:
+        # If the words isn't in the dictionary
         if i.lower() not in tmp_ordliste:
+            # Add it with the value of 1
             tmp_ordliste[i.lower()] = 1
+        # If the word is in the dictionary
         else:
-            tmp_ordliste[i.lower()] += 1
-    print(tmp_ordliste)
+            tmp_ordliste[i.lower()] += 1 # Up the value by 1
+    tmp_ordliste.pop("") # Removes the last empty thing
+    return tmp_ordliste
         
 
 # Run until stopped.
@@ -32,5 +38,8 @@ while True:
     # Use the write to file functon to save the users supercool words.
     write_to_file(i)
 
-word_count(open("oppgave7.save").read())
+# Runs once for every different word
+for key, value in word_count(open("oppgave7.save").read()).items():
+    # Prints how many times it has been written
+    print("[i] Ordet", key,"ble skrevet", value, "gang(er).")
 

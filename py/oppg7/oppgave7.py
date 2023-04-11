@@ -21,6 +21,11 @@ def write_to_file(string: str):
     file.write(token+"\n".encode()) # Writes the choosen string to the file
     file.close # Closes the file
 
+def get_file_content():
+    key = open("oppgave7.key", "r").read
+    oppg7 = open("oppgave7.save", "r").read
+    oppg7raw = decrypt(oppg7, key)
+    print(oppg7raw)
 
 
 
@@ -48,3 +53,4 @@ while True:
     # Use the write to file functon to save the users supercool words.
     write_to_file(i)
 
+get_file_content()
